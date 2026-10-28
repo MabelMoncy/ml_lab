@@ -46,4 +46,5 @@ ax.scatter(model.support_vectors_[:, 0],
 plt.xlabel("Sepal Length")
 plt.ylabel("Sepal Width")
 plt.title("Linear SVM on Iris Dataset")
-plt.show()
+plt.savefig("exp9_svm_decision_boundary_output.png", bbox_inches="tight")
+plt.close()

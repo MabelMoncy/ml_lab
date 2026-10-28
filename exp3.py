@@ -40,7 +40,8 @@ plt.xlabel("Actual Values")
 plt.ylabel("Predicted Values")
 plt.title("Actual vs Predicted Comparison")
 plt.legend()
-plt.show()
+plt.savefig("exp3_actual_vs_predicted_output.png", bbox_inches="tight")
+plt.close()
 
 # Coefficient Comparison
 coef_df = pd.DataFrame({
@@ -54,7 +55,8 @@ coef_df.plot(kind="bar")
 plt.title("Coefficient Comparison (Shrinkage Effect)")
 plt.ylabel("Coefficient Value")
 plt.xticks(rotation=45)
-plt.show()
+plt.savefig("exp3_coefficient_comparison_output.png", bbox_inches="tight")
+plt.close()
 
 print("\nBest Alpha Values:")
 print("Ridge Alpha:", ridge.alpha_)

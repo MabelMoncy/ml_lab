@@ -26,5 +26,5 @@ plt.plot(X, y_pred, color="red")
 plt.xlabel("Total Rooms")
 plt.ylabel("Median House Value")
 plt.title("Simple Linear Regression (150 Samples)")
-plt.show() #This may fail so try the next instruction in line 30
-plt.savefig("regression_plot.png")
+plt.savefig("exp1_actual_vs_predicted.png")
+plt.close()
