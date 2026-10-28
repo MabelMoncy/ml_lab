@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv("/content/sample_data/housing.csv")
+df = pd.read_csv("housing.csv")
 X = df['total_rooms'].head(150).values.reshape(-1, 1)
 y = df['median_house_value'].head(150).values.reshape(-1, 1)
 
@@ -26,4 +26,5 @@ plt.plot(X, y_pred, color="red")
 plt.xlabel("Total Rooms")
 plt.ylabel("Median House Value")
 plt.title("Simple Linear Regression (150 Samples)")
-plt.show()
+plt.show() #This may fail so try the next instruction in line 30
+plt.savefig("regression_plot.png")
