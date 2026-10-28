@@ -1,3 +1,4 @@
+# Experiment 7: K-Nearest Neighbors (KNN) for Image Classification using Fashion MNIST Dataset
 
 # 1. Import Libraries
 import numpy as np

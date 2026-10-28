@@ -1,3 +1,4 @@
+# Experiment 6: Text Classification using Multinomial vs Bernoulli Naïve Bayes (20 Newsgroups Dataset)
 
 from sklearn.datasets import fetch_20newsgroups
 from sklearn.model_selection import train_test_split
