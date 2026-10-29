@@ -61,12 +61,6 @@ Implementation of simple linear regression from scratch using the housing datase
 python exp1.py
 ```
 
-### Experiment 3: Linear, Ridge, and Lasso Regression
-Comparison of Linear, Ridge, and Lasso regression models on the Diabetes dataset.
-```bash
-python exp3.py
-```
-
 ### Experiment 6: Naive Bayes Classification
 Multinomial and Bernoulli Naive Bayes classification on the 20 Newsgroups dataset.
 ```bash
