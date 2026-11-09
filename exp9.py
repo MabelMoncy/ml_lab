@@ -1,4 +1,4 @@
-# Experiment 9: Linear SVM Classification on Iris Dataset with Decision Boundary Visualization
+# EXPERIMENT 9: Linear SVM Classification on Iris Dataset with Decision Boundary Visualization
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -17,6 +17,7 @@ model = svm.SVC(kernel='linear', C=1)
 model.fit(X, y)
 
 # Plot data points
+plt.figure()
 plt.scatter(X[:, 0], X[:, 1], c=y)
 
 # Plot decision boundary
@@ -47,4 +48,3 @@ plt.xlabel("Sepal Length")
 plt.ylabel("Sepal Width")
 plt.title("Linear SVM on Iris Dataset")
 plt.savefig("exp9_svm_decision_boundary_output.png", bbox_inches="tight")
-plt.close()
