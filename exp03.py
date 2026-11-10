@@ -9,9 +9,9 @@ from sklearn.linear_model import LinearRegression, RidgeCV, LassoCV
 from sklearn.metrics import mean_squared_error, r2_score
 
 # Dataset
-data = load_diabetes()
-X = pd.DataFrame(data.data, columns=data.feature_names)
-y = data.target
+dataset = load_diabetes()
+X = pd.DataFrame(dataset.data, columns=dataset.feature_names)
+y = dataset.target
 
 # Split
 X_train, X_test, y_train, y_test = train_test_split(
@@ -26,9 +26,7 @@ names = ["Linear", "Ridge", "Lasso"]
 
 # Evaluation
 print("\nModel Performance:")
-print("-------------")
 print("Model\t\tMSE\t\tR2")
-print(".-")
 for name, p in zip(names, preds):
     print(f"{name}\t\t{mean_squared_error(y_test, p):.4f}\t{r2_score(y_test, p):.4f}")
 
@@ -50,7 +48,6 @@ print(coef)
 coef.set_index('Feature').plot(kind='bar')
 plt.title("Coefficient Comparison (Shrinkage Effect)")
 plt.ylabel("Coefficient Value")
-plt.xticks(rotation=45)
 plt.savefig("exp3_coefficient_comparison.png")
 
 # Best Alpha Values
