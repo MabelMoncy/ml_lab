@@ -97,10 +97,10 @@ Activate the virtual environment and run commands from the repository's root dir
 | 7 | `python exp07.py` |
 | 9 | `python exp09.py` |
 
-For example, to run Experiment 14:
+For example, to run Experiment 9:
 
 ```bash
-python exp14.py
+python exp09.py
 ```
 
 ## 6. Troubleshooting
@@ -112,18 +112,6 @@ Make sure the virtual environment is activated, then install the missing package
 ```bash
 python -m pip install package-name
 ```
-
-**A dataset file is not found**
-
-Check that the required CSV or Excel file is in the `ml_lab` root folder and that its filename matches the spelling in the table above.
-
-**A dataset download fails**
-
-Check your internet connection. Some datasets are downloaded automatically by Seaborn, scikit-learn, or Keras the first time the corresponding experiment runs.
-
-**TensorFlow shows CUDA or GPU warnings**
-
-If TensorFlow cannot find CUDA/GPU libraries, it may use the CPU instead. This does not necessarily mean the program has failed. Allow extra time for training.
 
 **All the best for your Machine Learning Lab Exam!**
 
