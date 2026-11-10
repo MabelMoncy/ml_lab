@@ -10,10 +10,8 @@ from sklearn.metrics import mean_squared_error, r2_score
 
 # Dataset
 data = load_diabetes()
-print(data.DESCR)
-df = pd.DataFrame(data.data, columns=data.feature_names)
-df['target'] = data.target
-X, y = df.drop('target', axis=1), df['target']
+X = pd.DataFrame(data.data, columns=data.feature_names)
+y = data.target
 
 # Split
 X_train, X_test, y_train, y_test = train_test_split(

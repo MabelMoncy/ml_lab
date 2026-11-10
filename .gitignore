@@ -17,3 +17,7 @@ __pycache__/
 # IDE settings
 .vscode/
 .idea/
+
+# Local folders
+learn/
+
