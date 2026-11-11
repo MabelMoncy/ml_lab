@@ -1,3 +1,5 @@
+#K-Nearest Neighbors Classification on Fashion-MNIST
+
 import numpy as np
 from tensorflow.keras.datasets import fashion_mnist
 from sklearn.neighbors import KNeighborsClassifier
