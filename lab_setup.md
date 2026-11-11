@@ -9,6 +9,7 @@ sudo apt update
 ```
 
 Depending on your Ubuntu version, install the Python 3 virtual environment package (`python3-venv` is standard for Ubuntu 18.04 and 20.04):
+**Check Ubuntu version using `hostnamectl`**
 
 * **For Ubuntu 18.04 and 20.04:**
   ```bash
